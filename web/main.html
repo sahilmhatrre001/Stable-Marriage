@@ -11,17 +11,35 @@
     <body>
         <div class="container jumbotron" id="main">
             <div class="row">
-                <h2>Stable Marriage</h2>
+                <div class="col-sm-12">
+                    <h2 id="title">Stable Marriage</h2>
+                </div>
             </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <button type="button" class="btn btn-info" onclick="create_new_list()">New Marriage List</button>
+            <br><br>
 
+        <form>
+            <div class="form-group" id="content">
+                <label>Number of Pairs</label>
+                <input type="text" class="form-control" id="txt_np" placeholder="Enter Number of pairs">
+                <br>
+                <button class="btn btn-info" id="next_btn">Next</button>
             </div>
-            <div class="col-sm-8">
-                <h3>Name of Existing List</h3>
+            <div id="content_table" hidden>
+                <table class='table'>
+                    <thead class='thead-dark'>
+                        <tr> 
+                            <th>Name of Boys</th> 
+                            <th>Name of Girls</th> 
+                        </tr>
+                    </thead>
+                        <tbody id="t_body">
+
+                        </tbody>
+                    </table>
+                    <button class="btn btn-info" id="btn_ok">OK</button>
             </div>
-        </div>
+        </form>
+
         </div>
     </body>
 </html>
